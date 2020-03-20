@@ -11,13 +11,16 @@ loop
     clipboard := ""
     Send {CTRL DOWN}c{CTRL UP}
     ClipWait 
+    Sleep, 200
     Send {ALT DOWN}{TAB}{ALT UP}
-    Sleep, 50 
-    Send {ENTER}{CTRL DOWN}v{CTRL UP}
-    Sleep, 50 
+    Sleep, 200 
+    Send {DOWN}{END},
+    Sleep, 200 
+    Send {CTRL DOWN}v{CTRL UP}
+    Sleep, 200 
     Send {ALT DOWN}{TAB}{ALT UP}
-    Sleep, 50 
+    Sleep, 200 
     Send {DOWN}
-    Sleep, 50 
+    Sleep, 200 
 }
 return
